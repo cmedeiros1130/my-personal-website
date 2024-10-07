@@ -4,7 +4,7 @@ const sections = document.querySelectorAll("section");
 const navBarLinks = document.querySelectorAll(".navbar-link");
 const progress = document.querySelector(".progress-bars-wrapper");
 
-const progressBarPercents = [90, 89, 85, 85, 80, 60, 50];
+const progressBarPercents = [90, 89, 85, 85, 80, 65, 65, 65];
 
 window.addEventListener("scroll", () => {
   mainFn();
