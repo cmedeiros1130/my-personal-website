@@ -318,6 +318,8 @@ html {
   background-color: white;
   box-shadow: 0.3rem 0.3rem 0.5rem #777;
   position: relative;
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Prevents overflow */
 }
 
 .project-name {
@@ -333,7 +335,25 @@ html {
 }
 
 .project-img {
-  width: 40rem;
+  width: 40rem; /* Original image width */
+  border-radius: 6%; /* Match the border radius */
+  position: relative; /* For stacking context */
+  z-index: 1; /* Ensures image is above shadow */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+    0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5); /* Neon glow effect */
+}
+
+.project-text::before {
+  content: "";
+  position: absolute;
+  left: -5px; /* Adjust for desired spacing */
+  top: -5px; /* Adjust for desired spacing */
+  width: calc(100% + 10px); /* Wider than the image */
+  height: calc(100% + 10px); /* Taller than the image */
+  border-radius: 10px; /* Matches the project text border radius */
+  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff,
+    0 0 20px #ffffff, 0 0 25px #ffffff; /* Neon glow effect */
+  z-index: 0; /* Send it behind the image */
 }
 
 .project-link {
