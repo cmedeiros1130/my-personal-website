@@ -33,6 +33,67 @@ html {
 }
 /*End of Common styles*/
 
+/*Main picture*/
+.about-me-img {
+  position: relative;
+  display: inline-block; /* Makes the container only as wide as the image */
+}
+
+.neon-border {
+  position: relative;
+  padding: 10px; /* Space for the border */
+  border-radius: 6%; /* Matches the image border radius */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Background for contrast */
+}
+
+.neon-border::before {
+  content: "";
+  position: absolute;
+  left: -5px; /* Adjust for desired spacing */
+  top: -5px; /* Adjust for desired spacing */
+  width: calc(100% + 10px); /* Wider than the image */
+  height: calc(100% + 10px); /* Taller than the image */
+  border-radius: 6%; /* Matches the image border radius */
+  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff,
+    0 0 20px #ffffff, 0 0 25px #ffffff; /* Neon glow effect */
+  z-index: -1; /* Send it behind the image */
+}
+
+.person-img {
+  width: 75rem;
+  height: 65rem;
+  border-radius: 6%;
+  margin-top: 11rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem;
+  opacity: 0.9;
+  display: block;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+    0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5); /* Glow effect */
+}
+
+/*Main image footer*/
+.person-img1 {
+  width: 55rem;
+  height: 55rem;
+  margin-top: 9.4rem;
+  margin-left: 9rem;
+  border-radius: 6%; /* Matches the neon border radius */
+  background-color: rgba(255, 255, 255, 0.8); /* Neon white background */
+  padding: 0.5rem; /* Padding around the image */
+  opacity: 0.9; /* Image opacity */
+  display: block; /* Ensure the image is a block element */
+  position: relative; /* Ensure proper stacking context */
+  z-index: 1; /* Bring image above the border */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+    0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5); /* Glow effect */
+}
+/*End of Main image footer*/
+
+/*End of Main picture*/
+
 /*Section 1*/
 
 /*Main page greeting*/
@@ -92,48 +153,8 @@ html {
   transform: skew(-10deg);
 }
 
-.about-me-img {
-  position: relative;
-  display: inline-block; /* Makes the container only as wide as the image */
-}
-
-.neon-border {
-  position: relative;
-  padding: 10px; /* Space for the border */
-  border-radius: 6%; /* Matches the image border radius */
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: Background for contrast */
-}
-
-.neon-border::before {
-  content: "";
-  position: absolute;
-  left: -5px; /* Adjust for desired spacing */
-  top: -5px; /* Adjust for desired spacing */
-  width: calc(100% + 10px); /* Wider than the image */
-  height: calc(100% + 10px); /* Taller than the image */
-  border-radius: 6%; /* Matches the image border radius */
-  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff,
-    0 0 20px #ffffff, 0 0 25px #ffffff; /* Neon glow effect */
-  z-index: -1; /* Send it behind the image */
-}
-
-.person-img {
-  width: 75rem; /* Original image width */
-  height: 65rem; /* Original image height */
-  border-radius: 6%; /* Matches the neon border radius */
-  margin-top: 11rem; /* Original margin */
-  background-color: rgba(255, 255, 255, 0.8); /* Neon white background */
-  padding: 0.5rem; /* Padding around the image */
-  opacity: 0.9; /* Image opacity */
-  display: block; /* Ensure the image is a block element */
-  position: relative; /* Ensure proper stacking context */
-  z-index: 1; /* Bring image above the border */
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
-    0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5); /* Glow effect */
-}
-
 /*End of Section 1*/
-/*NAvBar*/
+/*navBar*/
 .navbar {
   width: 100%;
   height: 4rem;
@@ -306,7 +327,8 @@ html {
 
 .projects-wrapper {
   width: 80%;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .project-text {
@@ -391,8 +413,12 @@ html {
   border-color: #fff;
 }
 
-h2 {
-  font-size: 2rem;
+#fellow-ri {
+  font-size: 2.7rem;
+  color: #888;
+  font-weight: 400;
+  text-align: center;
+  display: block;
 }
 
 .about-m {
@@ -401,26 +427,17 @@ h2 {
   align-items: center;
 }
 
-ul li {
-  font-size: 1.7rem;
+.about-me-div p {
+  font-size: 2.7rem;
+  text-align: left;
+  margin-left: 25rem;
 }
-
-.person-img1 {
-  width: 55rem;
-  height: 55rem;
-  margin-top: 9.4rem;
-  margin-left: 9rem;
-  background-color: rgba(24, 22, 22, 0.7);
-  padding: 0.5rem;
-  opacity: 0.9;
-}
-
 /*Footer*/
 
 .section-5 {
   width: 100%;
   height: 30vh;
-  background-color: #222;
+  background-color: #000000;
   flex-direction: column;
 }
 
@@ -431,7 +448,7 @@ ul li {
 .social-media-link {
   margin: 0 2rem;
   padding: 1.7rem;
-  background-color: #e41c6f;
+  background-color: rgb(88, 88, 88);
   border-radius: 0.5rem;
   display: inline-block;
 }
