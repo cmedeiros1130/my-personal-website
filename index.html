@@ -1,252 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="app.css" />
-    <link rel="stylesheet" href="Responsive.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Chris Medeiros</title>
-  </head>
-  <body>
-    <!--Navbar-->
-    <nav class="navbar-top center">
-      <a href="#section-1" class="navbar-link">Home</a>
-      <a href="#section-2" class="navbar-link">My Skills</a>
-      <a href="#section-3" class="navbar-link">Portfolio</a>
-      <a href="#section-4" class="navbar-link">About Me</a>
-    </nav>   
-    <!--End of Nabar-->
 
-    <div class="container">
-    <div class="grid-container">
-      <!--Section 1-->
-      <section class="section-1 center" id="section-1">
-        <div class="main-page-hello">
-      <h3 class="hello">Hello!</h3>
-      <h1 class="im-chris">Im <span class="chris-yellow">Chris Medeiros</span></h1>
-      <h2 class="front-dev">Front-End developer</h2> 
-      <a href="resume.html">
-        <button class="resume-btn">My Resume</button>
-      </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="app.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+  <title>WowFolio - A Simple & Clean Portfolio Template For Developers</title>
+  <meta name="description" content="Wowfolio - A Simple & Clean Portfolio Template For Developers" />
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="main-header__logo-container">
+      <div class="main-header__logo-img-cont">
+        <img
+          src="https://d33wubrfki0l68.cloudfront.net/32c48e23e828c42a99a37db81e2a91d7c8eed4de/d134a/assets/png/ram-maheshwari.png"
+          alt="logo Image" class="main-header__logo-img" />
+      </div>
+      <h4 class="main-header__logo-text">John Anderson</h4>
     </div>
-      </section>
-      <div class="about-me-img">
-        <div class="neon-border">
-        <img src="pictures/img_8083.jpg" alt="Chris Medeiros" class="person-img" />
+    <nav class="main-header__navigation">
+      <ul class="main-header__navigation-links">
+        <li class="main-header__navigation-link"><a href="./index.html"> Home </a></li>
+        <li class="main-header__navigation-link"><a href="./index.html#about"> About </a></li>
+        <li class="main-header__navigation-link">
+          <a href="./index.html#projects"> Projects </a>
+        </li>
+        <li class="main-header__navigation-link"><a href="./index.html#contact" href=""> Contact </a></li>
+      </ul>
+    </nav>
+    <div class="main-header__sm-scr-nav-btn">
+      <div class="main-header__sm-scr-nav-btn-line"></div>
+      <div class="main-header__sm-scr-nav-btn-line"></div>
+    </div>
+    <div class="main-header__sm-menu">
+      <div class="main-header__sm-menu-close">
+
+      </div>
+      <ul class="main-header__sm-menu-links">
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--1" name="home-hero">Home</a>
+        </li>
+
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--2" name="about">About</a>
+        </li>
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--3" name="projects">Projects</a>
+        </li>
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--4" name="contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- <button class="btn btn-theme btn-sm">Download CV</button> -->
+  </header>
+
+  <!--Remove or Comment out this theme selector code when you are done with choosing the right color for your theme so this color selector don't appear when you host the site online-->
+  <div class="themeClrSelector">
+    <input placeholder="Color Selector" type="color" value="#1DA1F2" class="themeClrSelector__input" />
+    <img alt="theme color tester" src="https://img.icons8.com/fluent/48/000000/rgb-circle-1.png"
+      class="themeClrSelector__img" />
+  </div>
+  <!---->
+
+  <section id="home-hero" class="home-hero">
+    <div class="home-hero__content">
+      <div class="home-hero__info">
+        <h1 class="heading-primary home-hero__heading-primary">
+          <span class="heading-primary__sm"> Hello 👋</span>
+          <span class="heading-primary__main">
+            I'm John Anderson! A Web Developer Building Awesome Webapps And Websites That Powers The Internet
+          </span>
+        </h1>
+        <button class="btn btn-theme home-hero__btn-theme">Projects</button>
+        <button class="btn btn-inv home-hero__btn-theme">Contact</button>
       </div>
     </div>
+  </section>
+  <section id="about" class="about main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary projects__heading-secondary">
+        <span class="heading-secondary__sm"> About 🦄</span>
+        <span class="heading-secondary__main">
+          Here you will find more information about me, what I do, and list of my current skills in programming
+      </h2>
+      <div class="main-section__content">
+        <div class="about__info">
+          <div class="about__main-info">
+            <h3 class="heading-quaternary about__heading-quaternary">
+              My Story
+            </h3>
+            <p class="text-primary about__text-primary">
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Error, aliquid! Itaque corrupti magnam fugiat mollitia labore
+                magni saepe veritatis voluptatum alias fugit. Explicabo
+                ducimus sequi aut corporis odio repellendus? Lorem ipsum dolor
+                sit amet
+              </span>
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Error, aliquid! Itaque corrupti magnam fugiat mollitia labore
+                magni saepe veritatis voluptatum alias fugit. Explicabo
+                ducimus sequi aut corporis odio repellendus? Lorem ipsum dolor
+                sit amet
+              </span>
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Error, aliquid! Itaque corrupti magnam fugiat mollitia labore
+                magni saepe veritatis voluptatum alias fugit. Explicabo
+                ducimus sequi aut corporis odio repellendus? Lorem ipsum dolor
+                sit amet
+              </span>
+            </p>
+            <button class="btn btn-theme about__btn-theme">Projects</button>
+          </div>
+          <div class="about__skill-info">
+            <h3 class="heading-quaternary about__heading-quaternary">
+              My Skills
+            </h3>
+            <ul class="about__skills">
+              <li class="about__skill">html</li>
+              <li class="about__skill">css</li>
+              <li class="about__skill">javascript</li>
+              <li class="about__skill">react</li>
+              <li class="about__skill">node</li>
+              <li class="about__skill">git</li>
+              <li class="about__skill">vscode</li>
+              <li class="about__skill">linux</li>
+              <li class="about__skill">react</li>
+              <li class="about__skill">node</li>
+              <li class="about__skill">git</li>
+              <li class="about__skill">vscode</li>
+              <li class="about__skill">linux</li>
+              <li class="about__skill">javascript</li>
+              <li class="about__skill">react</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-      <!--End of Section 1-->
-      <!--Navbar-->
-      <nav class="navbar center">
-        <a href="#section-1" class="navbar-link">Home</a>
-        <a href="#section-2" class="navbar-link">My Skills</a>
-        <a href="#section-3" class="navbar-link">Portfolio</a>
-        <a href="#section-4" class="navbar-link">About Me</a>
-      </nav>   
-      <!--End of Nabar-->
-      <!--Section 2-->
-      <section class="section-2" id="section-2">
-        <h1 class="section-heading  section-2-heading">My Skills</h1>
-        <div class="progress-bars-wrapper">
-          <div class="progress-bar">
-            <p class="progress-text">HTML <span></span>%</p>
-            <div class="progres-percent"></div>
-          </div>
-          <div class="progress-bar">
-            <p class="progress-text">CSS <span></span>%</p>
-            <div class="progres-percent"></div>
-          </div>
-          <div class="progress-bar">
-            <p class="progress-text">JavaScript <span></span>%</p>
-            <div class="progres-percent"></div>
-          </div>
-          <div class="progress-bar">
-            <p class="progress-text">React.js <span></span>%</p>
-            <div class="progres-percent"></div>
-          </div>
-          <div class="progress-bar">
-            <p class="progress-text">RESPONSIVE DESIGN <span></span>%</p>
-            <div class="progres-percent"></div>
-          </div>
-          <div class="progress-bar">
-            <p class="progress-text">SQL <span></span>%</p>
-            <div class="progres-percent"></div>
-          </div>
-          <div class="progress-bar">
-            <p class="progress-text">Node.js <span></span>%</p>
-            <div class="progres-percent"></div>
-          </div>
-          <div class="progress-bar">
-            <p class="progress-text">Express <span></span>%</p>
-            <div class="progres-percent"></div>
-          </div>
-        </div>
-        <div class="services">
-          <div class="service">
-            <i class="fas fa-lightbulb"> </i>
-            <h2 class="service-heading">Creative</h2>
-          </div>
-          <div class="service">
-            <i class="fas fa-cut"></i>
-            <h2 class="service-heading">Probem Solving</h2>
-          </div>
-          <div class="service">
-            <i class="fas fa-tachometer-alt"></i>
-            <h2 class="service-heading">Fast</h2>
-          </div>
-          <div class="service">
-            <i class="fas fa-rocket"></i>
-            <h2 class="service-heading">Dynamic</h2>
-          </div>
-        </div>
-      </section>
-      <!--End of Section 2-->
-      <nav class="navbar center">
-        <a href="#section-1" class="navbar-link">Home</a>
-        <a href="#section-2" class="navbar-link">My Skills</a>
-        <a href="#section-3" class="navbar-link">Portfolio</a>
-        <a href="#section-4" class="navbar-link">About Me</a>
-      </nav> 
-      <section class="section-3" id="section-3">
-        <h1 class="section-heading">My Projects</h1>
-        <div class="projects-wrapper center">
-          <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">The Road</h2>
-              <h4 class="project-technologys">HTML / CSS / JS</h4>
-              <img src="pictures/Screenshot 2024-06-01 031916.png" class="project-img" />
-              <a href="https://the-road-project.netlify.app/" class="project-link" target="_blank">Go To Project</a>
-              <a href="https://github.com/cmedeiros1130/THE-ROAD" class="project-link" target="_blank">Go To Code</a>
+  </section>
+  <section class="skills-showcase">
+    <ul class="skills-showcase__list">
+      <li class="skills-showcase__list-item">
+        <i class="devicon-html5-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-css3-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-javascript-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-react-original"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-sass-original"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-nodejs-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-git-plain"></i>
+      </li>
+
+      <li class="skills-showcase__list-item">
+        <i class="devicon-android-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-python-plain"></i>
+      </li>
+    </ul>
+  </section>
+  <section id="projects" class="projects main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary projects__heading-secondary">
+        <span class="heading-secondary__sm"> Projects 🛠️</span>
+        <span class="heading-secondary__main">
+          Here you will find some of the personal and clients projects that I created with the project details
+        </span>
+      </h2>
+      <div class="main-section__content">
+        <div class="projects__list">
+          <div class="projects__list-item">
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 1 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
             </div>
-          </div>
-          <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">Comfy Store</h2>
-              <h4 class="project-technologys">React.js</h4>
-              <img src="pictures/Screenshot 2024-07-18 110711.png" class="project-img" />
-              <a href="https://the-comfy-store-site.netlify.app/" class="project-link" target="_blank">Go To Project</a>
-              <a href="https://github.com/cmedeiros1130/comfy-store" class="project-link" target="_blank">Go To Code</a>
-            </div>
-          </div>
-          <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">Map Workout</h2>
-              <h4 class="project-technologys">HTML / CSS / JS</h4>
-              <img src="pictures/Screenshot 2024-05-26 150903.png" class="project-img" />
-              <a href="https://cmedeiros1130.github.io/Map-workout-added/" class="project-link" target="_blank">Go To Project</a>
-              <a href="https://github.com/cmedeiros1130/Map-workout-added" class="project-link" target="_blank">Go To Code</a>
-            </div>
-          </div>
-          <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">PayPal Clone</h2>
-              <h4 class="project-technologys">HTML / CSS / JS</h4>
-              <img src="pictures/Screenshot 2024-05-29 084441.png" class="project-img" />
-              <a href="https://the-road-project.netlify.app/" class="project-link" target="_blank">Go To Project</a>
-              <a href="https://cmedeiros1130.github.io/Paypal-Clone/" class="project-link" target="_blank">Go To Code</a>
-            </div>
-          </div>
-          <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">Node Farm</h2>
-              <h4 class="project-technologys">Node.js</h4>
-              <img src="pictures/Screenshot 2024-10-08 035313.png" class="project-img" />
-              <a href="https://github.com/cmedeiros1130/node-farm" class="project-link" target="_blank">Go To Code</a>
-            </div>
-          </div>
-          <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">Wild Oasis</h2>
-              <h4 class="project-technologys">Next.js</h4>
-              <img src="pictures/Screenshot 2024-10-08 034315.png" class="project-img" />
-              <a href="https://github.com/cmedeiros1130/Next.js-wild-hotel" class="project-link" target="_blank">Go To Code</a>
-            </div>
-          </div>
-          <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">Movie Rating Website</h2>
-              <h4 class="project-technologys">React.js</h4>
-              <img src="pictures/Screenshot 2024-06-02 030857.png" class="project-img" />
-              <a href="https://github.com/cmedeiros1130/use-popcorn" class="project-link" target="_blank">Go To Code</a>
-            </div>
-            </div>
-                <div class="project">
-                  <div class="project-text">
-                    <h2 class="project-name">Forkify</h2>
-                    <h4 class="project-technologys">HTML / CSS / JS</h4>
-                    <img src="pictures/Screenshot 2024-06-12 060805.png" class="project-img" />
-                    <!--<a href="#" class="project-link" target="_blank">Go To Project</a>--->
-                    <a href="https://github.com/cmedeiros1130/forkify" class="project-link" target="_blank">Go To Code</a>
-                  </div>
-                </div>
-                    <div class="project">
-                      <div class="project-text">
-                        <h2 class="project-name">Supabase Ecom</h2>
-                        <h4 class="project-technologys">React.js</h4>
-                        <img src="pictures/Screenshot 2024-06-13 010652.png" class="project-img" />
-                        <a href="https://github.com/cmedeiros1130/Supabase-Ecom" class="project-link" target="_blank">Go To Code</a>
-                      </div>
-                    </div>  
-                    </div>                
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
               </div>
-      </section>
-      <!--End of section 3-->
-   
-      <!--Section 4-->
-      <div class="grid-container">
-      <div class="about-me-img">
-        <div class="neon-border">
-        <img src="pictures/img_8083.jpg" alt="Chris Medeiros" class="person-img1" />
-      </div>
-      </div>
-        <section class="section-4" id="section-4">
-        <h1 class="section-heading section-4-heading">About Me</h1>
-        <div class="about-me">
-        <div class="about-me-div">
-          <p><span>Name:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Christopher Medeiros</p><br />
-          <p><span>Date of birth:</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11/30/2000</p><br />
-          <p><span>ZipCode:</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;02910</p><br />
-          <p><span>Email:</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cmedeiros1130@gmail.com</p><br /><br/>
-          <h2 id="fellow-ri">Fellow rhode islander <br/>whos breaking into the tech field <br/>falling in love with frontend developement</h2><br />
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Project Name
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
+                  labore magni saepe veritatis voluptatum alias fugit.
+                  Explicabo ducimus
+                </span>
+                <!-- <br />
+                  <br /> -->
+                <span>
+                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit
+                </span>
+              </p>
+              <button class="btn btn-theme projects__btn-theme">
+                Live Link
+              </button>
+              <button class="btn btn-inv projects__btn-inv">Code Link</button>
+            </div>
+          </div>
+          <div class="projects__list-item projects__list-item--inv">
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Project Name
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
+                  labore magni saepe veritatis voluptatum alias fugit.
+                  Explicabo ducimus
+                </span>
+                <!-- <br />
+                  <br /> -->
+                <span>
+                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit
+                </span>
+              </p>
+              <button class="btn btn-theme projects__btn-theme">
+                Live Link
+              </button>
+              <button class="btn btn-inv projects__btn-inv">Code Link</button>
+            </div>
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 2 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+          </div>
+          <div class="projects__list-item">
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 3 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Project Name
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
+                  labore magni saepe veritatis voluptatum alias fugit.
+                  Explicabo ducimus
+                </span>
+                <!-- <br />
+                  <br /> -->
+                <span>
+                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit
+                </span>
+              </p>
+              <button class="btn btn-theme projects__btn-theme">
+                Live Link
+              </button>
+              <button class="btn btn-inv projects__btn-inv">Code Link</button>
+            </div>
+          </div>
+          <div class="projects__list-item projects__list-item--inv">
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Project Name
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
+                  labore magni saepe veritatis voluptatum alias fugit.
+                  Explicabo ducimus
+                </span>
+                <!-- <br />
+                  <br /> -->
+                <span>
+                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit
+                </span>
+              </p>
+              <button class="btn btn-theme projects__btn-theme">
+                Live Link
+              </button>
+              <button class="btn btn-inv projects__btn-inv">Code Link</button>
+            </div>
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 4 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+          </div>
         </div>
       </div>
-        
-        
-      </section>
     </div>
-    <nav class="navbar center">
-      <a href="#section-1" class="navbar-link">Home</a>
-      <a href="#section-2" class="navbar-link">My Skills</a>
-      <a href="#section-3" class="navbar-link">Portfolio</a>
-      <a href="#section-4" class="navbar-link">About Me</a>
-    </nav> 
-      <!--End of section 4-->
-      <!--Footer-->
-      <footer class="section-5 center" id="section-5">
-        <div class="social-media">
-          <a href="https://github.com/cmedeiros1130" class="social-media-link">
-            <i class="fab fa-github-square"></i> 
+  </section>
+  <section id="contact" class="contact main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary">
+        <span class="heading-secondary__sm"> Contact 📞</span>
+        <span class="heading-secondary__main">
+          Feel free to Contact me by submitting the form below and I will get back to you as soon as possible
+        </span>
+      </h2>
+      <div class="main-section__content">
+        <div class="contact__form-cont">
+          <form class="contact__form">
+            <div class="contact__form-field">
+              <label for="name" class="contact__form-field-label">Name</label>
+              <input placeholder="Enter Your Name" type="text" class="contact__form-field-input" />
+            </div>
+            <div class="contact__form-field">
+              <label for="name" class="contact__form-field-label">Email</label>
+              <input placeholder="Enter Your Email" type="text" class="contact__form-field-input" />
+            </div>
+            <div class="contact__form-field">
+              <label for="name" class="contact__form-field-label">Message</label>
+              <textarea placeholder="Enter Your Message" name="message" id="" cols="30" rows="10"
+                class="contact__form-field-input"></textarea>
+            </div>
+            <button type="submit" class="contact__form-submit">Submit</button>
+          </form>
+          <div class="contact__form-visual"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <div class="main-footer__upper">
+      <div class="main-container">
+        <ul class="main-footer__links">
+          <li class="main-footer__link">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#about">About</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#projects">Projects</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="main-footer__mid-line"></div>
+        <div class="main-footer__socials">
+          <a href="#" class="main-footer__social-link">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png"
+              alt="" class="main-footer__social-link-icon" />
           </a>
-          <a href="https://www.linkedin.com/in/christophermedeiros1130/" class="social-media-link">
-            <i class="fab fa-linkedin"></i> 
+          <a href="#" class="main-footer__social-link">
+            <img src="./assets/icons8-instagram-48.png" alt="" class="main-footer__social-link-icon" />
+          </a>
+          <a href="#" class="main-footer__social-link">
+            <img src="./assets/icons8-twitter-50.png" alt="" class="main-footer__social-link-icon" />
+          </a>
+          <a href="#" class="main-footer__social-link">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
+              alt="" class="main-footer__social-link-icon" />
+          </a>
+          <a href="#" class="main-footer__social-link">
+            <img src="./assets/icons8-pinterest-64.png" alt="" class="main-footer__social-link-icon" />
           </a>
         </div>
-        <p class="copyright">
-          Copyright &copy; CodeAndCreate. All Rights Reserved
+      </div>
+    </div>
+    <div class="main-footer__bottom">
+      <div class="main-container">
+        <p class="main-footer__bottom-txt">
+          <!-- If you can give me some credits or shoutout here by linking to my website, then that will help me a lot :) -->
+          <a target="_blank" href="https://github.com/rammcodes/wowfolio">WowFolio</a> Open-Source Template
+          <script>document.write(new Date().getFullYear())</script>. Made by
+          <a target="_blank" href="https://rammaheshwari.com">Ram Maheshwari</a>
         </p>
-      </footer>
+      </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
