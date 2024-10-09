@@ -183,7 +183,7 @@
       <h2 class="heading-secondary projects__heading-secondary">
         <span class="heading-secondary__sm"> Projects 🛠️</span>
         <span class="heading-secondary__main">
-          Here you will find some of the personal and clients projects that I created with the project details
+          Here you will find some of the personal projects that I created along with the project details
         </span>
       </h2>
       <div class="main-section__content">
@@ -483,11 +483,7 @@
               <button class="btn btn-inv projects__btn-inv"><a href="https://github.com/cmedeiros1130/Quote-generator">Code Link</a></button>
             </div>
           </div>
-          
-
-
-
-          
+          <!--Just in case more projects are added add here  -->
         </div>
       </div>
     </div>
@@ -502,19 +498,18 @@
       </h2>
       <div class="main-section__content">
         <div class="contact__form-cont">
-          <form class="contact__form">
+          <form class="contact__form" action="https://formspree.io/f/mvgopljv" method="POST">
             <div class="contact__form-field">
               <label for="name" class="contact__form-field-label">Name</label>
-              <input placeholder="Enter Your Name" type="text" class="contact__form-field-input" />
+              <input name="name" placeholder="Enter Your Name" type="text" class="contact__form-field-input" required />
             </div>
             <div class="contact__form-field">
-              <label for="name" class="contact__form-field-label">Email</label>
-              <input placeholder="Enter Your Email" type="text" class="contact__form-field-input" />
+              <label for="email" class="contact__form-field-label">Email</label>
+              <input name="email" placeholder="Enter Your Email" type="email" class="contact__form-field-input" required />
             </div>
             <div class="contact__form-field">
-              <label for="name" class="contact__form-field-label">Message</label>
-              <textarea placeholder="Enter Your Message" name="message" id="" cols="30" rows="10"
-                class="contact__form-field-input"></textarea>
+              <label for="message" class="contact__form-field-label">Message</label>
+              <textarea name="message" placeholder="Enter Your Message" cols="30" rows="10" class="contact__form-field-input" required></textarea>
             </div>
             <button type="submit" class="contact__form-submit">Submit</button>
           </form>
@@ -550,7 +545,7 @@
           <a href="https://www.linkedin.com/in/christophermedeiros1130/" class="main-footer__social-link">
             <img src="./assets/icons8-linkedin-48.png" alt="" class="main-footer__social-link-icon" />
           </a>
-          <a href="" class="main-footer__social-link">
+          <a href="https://www.linkedin.com/in/christophermedeiros1130/" class="main-footer__social-link">
             <img
               src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
               alt="" class="main-footer__social-link-icon" />
@@ -565,9 +560,9 @@
       <div class="main-container">
         <p class="main-footer__bottom-txt">
           <!-- If you can give me some credits or shoutout here by linking to my website, then that will help me a lot :) -->
-          <a target="_blank" href="https://github.com/rammcodes/wowfolio">WowFolio</a> Open-Source Template
+          My Personal Website
           <script>document.write(new Date().getFullYear())</script>. Made by
-          <a target="_blank" href="https://rammaheshwari.com">Ram Maheshwari</a>
+          Christopher Medeiros
         </p>
       </div>
     </div>
